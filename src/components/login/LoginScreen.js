@@ -4,7 +4,7 @@ export const LoginScreen = ({history}) => {
     const handleLogin=()=>{
         //redirige hacia una direccion dada pero sse puede regresar al login
         //Inserta una nueva entrada en la pila del historial
-        history.push('/');
+        //history.push('/');
         //al redirigir Reemplaza la entrada actual en la pila del historial 
         history.replace('/');
     }
