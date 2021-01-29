@@ -10,6 +10,9 @@ export const LoginScreen = ({history}) => {
         //history.push('/');
         //al redirigir Reemplaza la entrada actual en la pila del historial 
         //history.replace('/');
+
+        const lasPath = localStorage.getItem('lastPath') || '/';
+
         const newUser ={
             name: 'Limbert'
         }
@@ -20,7 +23,7 @@ export const LoginScreen = ({history}) => {
 
         dispatch(action);
 
-        history.replace('/');
+        history.replace(lasPath);
     }   
 
 
